@@ -1,0 +1,59 @@
+# Settings
+theme = "ayu_mirage_edit"
+
+[editor]
+scrolloff = 999
+line-number = "relative"
+# line-number = "absolute"
+color-modes = true
+mouse = false
+scroll-lines = 4
+
+[editor.smart-tab]
+enabled = true 
+
+[editor.gutters]
+layout = ["spacer", "diff", "line-numbers", "diagnostics"]
+
+[editor.gutters.line-numbers]
+min-width = 20
+
+[editor.statusline]
+left = []
+right = ["file-name"]
+center = []
+mode.normal = "NORMAL"
+
+[editor.lsp]
+snippets = false
+
+# Keybinds
+[keys.normal]
+j   = "move_char_left"
+k   = "move_visual_line_down"
+l   = "move_visual_line_up"
+"ö" = "move_char_right"
+
+S-k = "page_cursor_half_down"
+S-l = "page_cursor_half_up"
+S-j = "goto_first_nonwhitespace"
+"Ö" = "goto_line_end"
+
+")" = "goto_next_diag"
+"(" = "goto_prev_diag"
+
+# Other
+h   = "collapse_selection"
+H   = "join_selections"
+
+[keys.normal.C-w]
+j   = "jump_view_left"
+k   = "jump_view_down"
+l   = "jump_view_up"
+"ö" = "jump_view_right"
+
+[keys.select]
+j   = "move_char_left"
+k   = "move_visual_line_down"
+l   = "move_visual_line_up"
+"ö" = "move_char_right"
